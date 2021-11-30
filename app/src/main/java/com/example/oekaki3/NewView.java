@@ -111,8 +111,9 @@ public class NewView extends View {
         mFirstDraw =false;
         //canvas.clipRect(mRctDst);
 
-        canvas.drawBitmap(mBmpBuf2,0,0, null);
-        canvas.drawPath(mPath,mPaint);
+        //canvas.drawBitmap(mBmpBuf2,0,0, null);
+        canvas3.drawPath(mPath,mPaint);
+        canvas.drawBitmap(mBmpBuf2,0,0,null);
         //canvas.drawBitmap(mBmpBuf,0,0,null);
     }
     //画像の設定
@@ -145,7 +146,7 @@ public class NewView extends View {
         mFirstDraw = true;
         mPath.reset();
         mBmp = null;
-        canvas3.drawColor(0, PorterDuff.Mode.CLEAR);
+        //canvas3.drawColor(0, PorterDuff.Mode.CLEAR);
         invalidate();
     }
 
@@ -265,9 +266,9 @@ public class NewView extends View {
             case MotionEvent.ACTION_UP:
                 mPath.lineTo(mX,mY);
 
-                canvas3.drawPath(mPath,mPaint);
+               // canvas3.drawPath(mPath,mPaint);
 
-                mPath.reset();
+                //mPath.reset();
                 invalidate();
 
                 break;
