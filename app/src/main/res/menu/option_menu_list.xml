@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto">
+    <item
+        app:showAsAction="always"
+        android:title="メニュー">
+        <menu>
+            <item
+                android:id="@+id/menuImageLoad"
+                android:title="画像取込"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/menuClearAll"
+                android:title="全消去"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/menuClearImage"
+                android:title="画像消去"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/menuClearLine"
+                android:title="落書き消去"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/menuSave"
+                android:title="画面保存"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/menuImageTurn"
+                android:title="画像回転"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/menuCamera"
+                android:title="カメラ"
+                app:showAsAction="never"/>
+
+        </menu>
+    </item>
+    <item
+        app:showAsAction="always"
+        android:title="色選択">
+        <menu>
+            <item
+                android:id="@+id/colorBlack"
+                android:title="黒"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/colorWhite"
+                android:title="白"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/colorBlue"
+                android:title="青"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/colorRed"
+                android:title="レッド"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/colorGreen"
+                android:title="グリーン"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/colorYellow"
+                android:title="イエロー"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+    <item
+        app:showAsAction="always"
+        android:title="筆の太さ">
+        <menu>
+            <item
+                android:id="@+id/lineGokuboso"
+                android:title="極細　"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/lineHosoi"
+                android:title="細い　"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/lineFutu"
+                android:title="普通　"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/lineFutoi"
+                android:title="太い　"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/lineGokubuto"
+                android:title="極太　"
+                app:showAsAction="never"/>
+
+        </menu>
+    </item>
+
+
+</menu>
